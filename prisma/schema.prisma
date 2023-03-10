@@ -18,6 +18,7 @@ model User {
   email     String  @unique
   password  String
   role      Role    @default(USER)
+  apiKey    String? @unique
 
   @@map("users")
 }
@@ -25,4 +26,5 @@ model User {
 enum Role {
   ADMIN
   USER
+  DEVELOPER
 }
