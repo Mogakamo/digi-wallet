@@ -7,10 +7,16 @@ import { PaymentsOptModule } from './payments-opt/payments-opt.module';
 import { ConfigModule } from '@nestjs/config';
 import { AuthModule } from './auth/auth.module';
 import { PassportModule } from '@nestjs/passport';
-import { HeaderApiKeyStrategy } from './auth/auth-header-api-key.strategy';
+import { HeaderApiKeyStrategy } from './auth/strategy/auth-header-api-key.strategy';
 
 @Module({
-  imports: [UsersModule, PaymentsOptModule, ConfigModule.forRoot(), AuthModule, PassportModule.register({defaultStrategy: 'api-key'})],
+  imports: [
+    UsersModule,
+    PaymentsOptModule,
+    ConfigModule.forRoot(),
+    AuthModule,
+    PassportModule.register({ defaultStrategy: 'api-key' }),
+  ],
   controllers: [AppController],
   providers: [AppService, HeaderApiKeyStrategy],
 })
