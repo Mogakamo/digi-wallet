@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Dependencies
 - @nestjs/common : ^9.0.0
 - @nestjs/core : ^9.0.0
