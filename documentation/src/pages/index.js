@@ -18,7 +18,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs">
-            Docusaurus Tutorial - 5min ⏱️
+            Welcome to the Digi Wallet Docs
           </Link>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <Layout
       title={`Home | ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="This is the homepage for the Digi Wallet docs">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
