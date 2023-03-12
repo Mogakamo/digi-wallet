@@ -10,4 +10,6 @@ sidebar_position: 2
 
 **License** : UNLICENSED
 
-**Author** :
+**Author** : Amos Nyaburi
+
+**Docs Writer**: Patrick Murimi
