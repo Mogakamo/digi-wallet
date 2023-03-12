@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Digi Wallet',
-  tagline: 'Send cash digitally  seemlessly',
+  tagline: 'Send cash digitally  seamlessly',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -43,7 +43,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/mog-rn/digi-wallet/tree/docs',
         },
         blog: false,
         // blog: {
@@ -83,11 +83,6 @@ const config = {
             href: 'https://github.com/mog-rn/digi-wallet',
             label: 'GitHub',
             position: 'right',
-          },
-          {
-            href: 'https://twitter/digi-wallet',
-            label: 'Twitter',
-            position: 'right',
           }
         ],
       },
@@ -98,7 +93,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Docs',
                 to: '/docs',
               },
             ],
@@ -125,7 +120,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/mog-rn/digi-wallet',
               },
             ],
           },
