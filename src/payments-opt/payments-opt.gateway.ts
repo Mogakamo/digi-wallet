@@ -1,4 +1,8 @@
-import { WebSocketGateway, SubscribeMessage, MessageBody } from '@nestjs/websockets';
+import {
+  WebSocketGateway,
+  SubscribeMessage,
+  MessageBody,
+} from '@nestjs/websockets';
 import { PaymentsOptService } from './payments-opt.service';
 import { CreatePaymentsOptDto } from './dto/create-payments-opt.dto';
 import { UpdatePaymentsOptDto } from './dto/update-payments-opt.dto';
@@ -24,7 +28,10 @@ export class PaymentsOptGateway {
 
   @SubscribeMessage('updatePaymentsOpt')
   update(@MessageBody() updatePaymentsOptDto: UpdatePaymentsOptDto) {
-    return this.paymentsOptService.update(updatePaymentsOptDto.id, updatePaymentsOptDto);
+    return this.paymentsOptService.update(
+      updatePaymentsOptDto.id,
+      updatePaymentsOptDto,
+    );
   }
 
   @SubscribeMessage('removePaymentsOpt')

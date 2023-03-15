@@ -10,6 +10,6 @@ sidebar_position: 2
 
 **License** : UNLICENSED
 
-**Author** : [Amos Nyaburi](https://github.com/mog-rn/)
+**Author** : Amos Nyaburi
 
-**Docs Writer** : [Patrick Murimi](https://github.com/grand-rick001)
+**Docs Writer**: Patrick Murimi
